@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Bike</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="left-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+    <ul class="right-nav">
+      <li><a href="bookbike.html">Book Bike</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bike Booking Section -->
+  <div class="bike-details">
+    <img src="https://cdn-icons-png.flaticon.com/512/1468/1468843.png" alt="Bike Image" class="bike-img" />
+    <div class="bike-info">
+      <h2>Bike Details</h2>
+      <p><strong>Name:</strong> Sport</p>
+      <p><strong>Model:</strong> XYZ 123</p>
+      <p><strong>Availability:</strong> Available</p>
+      <p><strong>Hourly Rate:</strong> $10.00</p>
+      <button onclick="bookNow()">Book Now</button>
+    </div>
+    <button onclick="logout()">Logout</button>
+
+  </div>
+
+  <script src="bookbike.js" defer></script>
+</body>
+</html>

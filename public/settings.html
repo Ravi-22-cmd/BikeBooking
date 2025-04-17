@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bookbike.html">Book Bike</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="settings.html" class="active">Settings</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Settings -->
+  <div class="settings-section">
+    <div class="settings-card">
+      <h2>User Settings</h2>
+
+      <div class="profile-pic">
+        <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        <p>Change Profile Picture</p>
+      </div>
+
+      <label>
+        Full Name:
+        <input type="text" placeholder="Your full name">
+      </label>
+
+      <label>
+        Email:
+        <input type="email" placeholder="@example.com">
+      </label>
+
+      <label>
+        New Password:
+        <input type="password" placeholder="********">
+      </label>
+
+      <label class="darkmode-toggle">
+        <input type="checkbox" id="dark-mode-toggle" />
+        Enable Dark Mode
+      </label>
+
+      <button id="save-settings-btn">Save Settings</button>
+    </div>
+  </div>
+
+  <script type="module" src="settings.js"></script>
+</body>
+</html>

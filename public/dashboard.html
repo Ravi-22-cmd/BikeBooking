@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bookbike.html">Book Bike</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="settings.html">Settings</a></li>
+
+    </ul>
+  </div>
+
+  <!-- Top Navbar -->
+  <div class="topbar">
+    <div class="left-topbar">
+      <h1>Dashboard</h1>
+    </div>
+    <div class="right-topbar">
+      <span id="user-email"></span>
+      
+      <button id="logout-btn">Logout</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="card profile-card">
+      <h2>Welcome!</h2>
+      <p>Your profile information appears here.</p>
+      <img src="https://via.placeholder.com/100" alt="Profile Picture">
+    </div>
+
+    <div class="card summary-card">
+      <h2>Total Spending</h2>
+      <p>$540.00</p>
+    </div>
+
+    <div class="card history-card">
+      <h2>Booking History</h2>
+      <ul>
+        <li>Royal Enfield – 2 hours – $40</li>
+        <li>Yamaha R15 – 5 hours – $100</li>
+        <li>Scooter – 8 hours – $80</li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

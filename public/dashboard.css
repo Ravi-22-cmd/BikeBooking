@@ -1,0 +1,169 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -160px;
+  width: 160px;
+  height: 100%;
+  background-color: #1f2937;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #374151;
+  border-radius: 4px;
+}
+
+/* Hover to reveal sidebar */
+body:hover .sidebar {
+  left: 0;
+}
+
+/* Top navbar */
+.topbar {
+  height: 60px;
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  padding-left: 180px; 
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Topbar right side */
+.right-topbar {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#user-email {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Buttons */
+button {
+  padding: 6px 14px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Main content */
+.main-content {
+  margin-top: 80px;
+  padding: 30px 20px 20px 200px; /* space for sidebar + content */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Profile card */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 15px;
+  object-fit: cover;
+}
+
+/* Booking history */
+.history-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.history-card ul li {
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .topbar {
+    padding-left: 20px;
+  }
+
+  .main-content {
+    padding: 80px 10px 20px 20px;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  body:hover .sidebar {
+    display: block;
+    left: 0;
+  }
+}
