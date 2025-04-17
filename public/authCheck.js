@@ -8,6 +8,6 @@ firebase.auth().onAuthStateChanged((user) => {
     }
   });
   if (!user) {
-    window.location.href = "login.html"; // restrict access
+    window.location.href = "login.html"; 
   }
   

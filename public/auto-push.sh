@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Auto commit and push script
+
 while true
 do
     git add .

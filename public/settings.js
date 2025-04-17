@@ -30,17 +30,17 @@ saveBtn.addEventListener("click", () => {
   alert("Settings saved!");
 });
 
-// Load Authenticated User Info
+// Load Authenticated User Informationnn
 onAuthStateChanged(auth, (user) => {
   if (user) {
     userNameEl.textContent = user.displayName || "User";
     userEmailEl.textContent = user.email;
 
     if (user.photoURL) {
-      profileImg.src = user.photoURL;
+      profileImg.src = user.photoURL;//apna photo dal de tum log
     }
   } else {
-    // Not logged in, redirect to login
+    
     window.location.href = "login.html";
   }
 });
